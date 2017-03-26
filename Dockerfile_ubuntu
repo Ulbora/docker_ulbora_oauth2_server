@@ -1,5 +1,5 @@
 FROM ubuntu
-ENV PROJECT_REPOSITORY_RELEASE https://api.github.com/repos/Ulbora/ulboracms/tarball/2.1.5
+ENV PROJECT_REPOSITORY_RELEASE https://api.github.com/repos/Ulbora/nodeJsOauth2Server/tarball/1.0.0
  
 RUN sudo apt-get update
 RUN sudo apt-get -y install curl
@@ -10,16 +10,16 @@ RUN sudo apt-get -y install nodejs
 RUN sudo apt-get -y install npm
 RUN sudo ln -s /usr/bin/nodejs /usr/bin/node
 RUN sudo npm install forever -g 
-RUN curl -sf -o /nodeapps/ulboracms.tar.qz -L $PROJECT_REPOSITORY_RELEASE
-RUN tar -xzvf /nodeapps/ulboracms.tar.qz -C /nodeapps
-RUN mv /nodeapps/Ulbora* /nodeapps/ulboracms
-WORKDIR /nodeapps/ulboracms
+RUN curl -sf -o /nodeapps/oauth2server.tar.qz -L $PROJECT_REPOSITORY_RELEASE
+RUN tar -xzvf /nodeapps/oauth2server.tar.qz -C /nodeapps
+RUN mv /nodeapps/Ulbora* /nodeapps/oauth2server
+WORKDIR /nodeapps/oauth2server
 RUN npm install
 #RUN forever /nodeapps/ulboracms/server.js
 #ADD entrypoint.sh /entrypoint.sh
-RUN mkdir test
-ADD DocTest.tar.gz /test
-WORKDIR /
+#RUN mkdir test
+#ADD DocTest.tar.gz /test
+#WORKDIR /
 #RUN tar -xzvf /DocTest.tar.gz -C /test
 
 
