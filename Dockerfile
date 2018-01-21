@@ -1,5 +1,5 @@
 FROM alpine:latest
-ENV PROJECT_REPOSITORY_RELEASE https://api.github.com/repos/Ulbora/nodeJsOauth2Server/tarball/1.0.6
+ENV PROJECT_REPOSITORY_RELEASE https://api.github.com/repos/Ulbora/nodeJsOauth2Server/tarball/1.0.7
 
 RUN apk add --update
 RUN apk add --update curl

@@ -1,5 +1,5 @@
 # Docker Ulbora Oauth2 Server
-- 1.0.6, latest[ (Dockerfile)](https://github.com/Ulbora/docker_ulbora_oauth2_server/blob/master/Dockerfile)
+- 1.0.7, latest[ (Dockerfile)](https://github.com/Ulbora/docker_ulbora_oauth2_server/blob/master/Dockerfile)
 
 This is Docker Ulbora Oauth2 Server running on Alpine
 
